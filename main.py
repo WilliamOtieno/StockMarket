@@ -7,3 +7,12 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, LSTM
 
+# Load Data
+company = 'FB'
+start = dt.datetime(2012,1,1)
+end = dt.datetime(2020,1,1)
+
+data = web.DataReader(company, 'yahoo', start, end)
+
+# Prepare Data
+scaler =
